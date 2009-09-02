@@ -1,0 +1,39 @@
+HKCR
+{
+	DicomShell.DicomColumnProvider.1 = s 'DicomColumnProvider Class'
+	{
+		CLSID = s '{49EA79DD-E386-46D3-A1CE-292F8C95C3F8}'
+	}
+	DicomShell.DicomColumnProvider = s 'DicomColumnProvider Class'
+	{
+		CLSID = s '{49EA79DD-E386-46D3-A1CE-292F8C95C3F8}'
+		CurVer = s 'DicomShell.DicomColumnProvider.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {49EA79DD-E386-46D3-A1CE-292F8C95C3F8} = s 'DicomColumnProvider Class'
+		{
+			ProgID = s 'DicomShell.DicomColumnProvider.1'
+			VersionIndependentProgID = s 'DicomShell.DicomColumnProvider'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{A16C99BE-3929-4BB5-BDF8-F7D0F20ABCA1}'
+		}
+	}
+
+	Folder
+	{
+		ShellEx
+		{
+			ColumnHandlers
+			{
+				ForceRemove {49EA79DD-E386-46D3-A1CE-292F8C95C3F8}
+			}
+		}
+	}
+	
+}

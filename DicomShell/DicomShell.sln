@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DicomShell", "DicomShell.vcproj", "{7538366A-1BF1-4450-9FDA-DA178B4D97B5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup\Setup.vdproj", "{F26B5372-6CE2-4CC1-93FF-CFE8D1849820}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7538366A-1BF1-4450-9FDA-DA178B4D97B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7538366A-1BF1-4450-9FDA-DA178B4D97B5}.Debug|Win32.Build.0 = Debug|Win32
+		{7538366A-1BF1-4450-9FDA-DA178B4D97B5}.Release|Win32.ActiveCfg = Release|Win32
+		{7538366A-1BF1-4450-9FDA-DA178B4D97B5}.Release|Win32.Build.0 = Release|Win32
+		{F26B5372-6CE2-4CC1-93FF-CFE8D1849820}.Debug|Win32.ActiveCfg = Debug
+		{F26B5372-6CE2-4CC1-93FF-CFE8D1849820}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,59 @@
+HKCR
+{
+	DicomShell.DicomFile.1 = s 'DicomFile Class'
+	{
+		CLSID = s '{C7DF344C-2496-4965-885E-1AAC8D702D28}'
+	}
+	DicomShell.DicomFile = s 'DicomFile Class'
+	{
+		CLSID = s '{C7DF344C-2496-4965-885E-1AAC8D702D28}'
+		CurVer = s 'DicomShell.DicomFile.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C7DF344C-2496-4965-885E-1AAC8D702D28} = s 'DicomFile Class'
+		{
+			ProgID = s 'DicomShell.DicomFile.1'
+			VersionIndependentProgID = s 'DicomShell.DicomFile'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{A16C99BE-3929-4BB5-BDF8-F7D0F20ABCA1}'
+		}
+	}
+	
+	ForceRemove dicomfile = s 'DICOM File'
+	{
+        shellex
+        {
+            ForceRemove {BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{C7DF344C-2496-4965-885E-1AAC8D702D28}'
+            ForceRemove {00021500-0000-0000-C000-000000000046} = s '{C7DF344C-2496-4965-885E-1AAC8D702D28}'
+        }
+        
+        DefaultIcon = s '%MODULE%'
+        
+        shell
+        {
+			open
+			{
+				command = s 'explorer /root,{2493558F-73E0-4d6a-9A4F-289ED599B53F},%%1'
+			}
+		}
+	}
+
+	NoRemove . = s 'dicomfile'
+	{
+	}
+
+	NoRemove .dcm = s 'dicomfile'
+	{
+	}
+
+	NoRemove .ima = s 'dicomfile'
+	{
+	}
+}
+

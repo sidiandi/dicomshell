@@ -1,0 +1,51 @@
+// DicomShell.idl : IDL source for DicomShell
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DicomShell.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "shobjidl.idl";
+
+[
+	object,
+	uuid(46EF4C89-4C3A-4618-AD36-74EBEDC2903F),
+	dual,
+	nonextensible,
+	helpstring("IDicomFile Interface"),
+	pointer_default(unique)
+]
+interface IDicomFile : IDispatch
+{
+	[id(1), helpstring("method Open")] HRESULT Open([in] BSTR path);
+};
+
+[
+	uuid(A16C99BE-3929-4BB5-BDF8-F7D0F20ABCA1),
+	version(1.0),
+	helpstring("DicomShell 1.0 Type Library")
+]
+library DicomShellLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(C7DF344C-2496-4965-885E-1AAC8D702D28),
+		helpstring("DicomFile Class")
+	]
+	coclass DicomFile
+	{
+		[default] interface IDicomFile;
+		interface IPersistFile;
+		interface IExtractImage2;
+	};
+
+	[
+		uuid(49EA79DD-E386-46D3-A1CE-292F8C95C3F8),
+		helpstring("DicomColumnProvider Class")
+	]
+	coclass DicomColumnProvider
+	{
+		[default] interface IUnknown;
+	};
+};

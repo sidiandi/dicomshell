@@ -1,0 +1,16 @@
+(0010,0010)	PN	PatientsName	1	dicom98
+(0010,0020)	LO	PatientID	1	dicom98
+(0010,0030)	DA	PatientsBirthDate	1	dicom98
+(0010,0040)	CS	PatientsSex	1	dicom98
+
+(0020,000D)	UI	StudyInstanceUID	1	dicom98
+(0020,000E)	UI	SeriesInstanceUID	1	dicom98
+
+(0020,0013)	IS	InstanceNumber	1	dicom98
+(0020,0011)	IS	SeriesNumber	1	dicom98
+(0028,0010)	US	Rows	1	dicom98
+(0028,0011)	US	Columns	1	dicom98
+
+(0018,1030)	LO	ProtocolName	1	dicom98
+(0018,0024)	SH	SequenceName	1	dicom98
+(0018,1020)	LO	SoftwareVersions	1-n	dicom98

@@ -1,0 +1,9 @@
+; DicomShell.def : Declares the module parameters.
+
+LIBRARY      "DicomShell.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

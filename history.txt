@@ -1,0 +1,14 @@
+DicomShell Change History
+
+2007-09-08
+- If a DICOM file contains no pixel data, a text thumbnail with modality, patient name, patient sex and patient birthdate is generated.
+- Added 3 DICOM SR files to test-data
+
+2007-06-23
+- DicomShell now supports JPEG and RLE encoded DICOM images.
+- Tooltip now shows all DICOM attributes by default.
+- test-data directory added with DICOM sample files from http://www.barre.nom.fr/medical/samples/
+- Installer now overwrites older versions of DicomShell
+
+2007-06-17
+Initial release.

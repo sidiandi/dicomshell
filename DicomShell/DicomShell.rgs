@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'DicomShell'
+		'DicomShell.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}
